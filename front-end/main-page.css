@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+ 
+ #factoidContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+} 
+
+.factoidClass{
+    font-family: arial;
+    font-size: 40px;
+}
