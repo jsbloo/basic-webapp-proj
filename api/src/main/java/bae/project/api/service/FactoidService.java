@@ -1,6 +1,8 @@
 package bae.project.api.service;
 
 import bae.project.api.domain.Factoid;
+import bae.project.api.exceptions.FactoidNotFoundException;
+import bae.project.api.exceptions.InvalidFactoidException;
 import bae.project.api.repo.FactoidRepo;
 import org.springframework.stereotype.Service;
 
@@ -15,19 +17,23 @@ public class FactoidService {
 
     public Factoid create(Factoid factoid){ return repo.saveAndFlush(factoid);}
 
-    public Factoid getById(long id){return repo.findById(id).get();}//TODO:add exception throw
+    public Factoid getById(long id){return repo.findById(id).orElseThrow(FactoidNotFoundException::new);}
 
     public List<Factoid> getAll(){return repo.findAll();}
 
     public Factoid update(long id, Factoid factoid){
-        Factoid existing = repo.findById(id).get();//TODO:Add error checking
+        Factoid existing = repo.findById(id).orElseThrow(FactoidNotFoundException::new);
         factoid.setId(existing.getId());
 
-        return repo.saveAndFlush(factoid);//TODO:Add error check
+        try{repo.saveAndFlush(factoid);}catch (Exception e){throw new InvalidFactoidException();//TODO:rethink this
+        }
+
+        return factoid;
     }
 
     public boolean delete(long id){
-        repo.deleteById(id);
+        Factoid factoid = repo.findById(id).orElseThrow(FactoidNotFoundException::new);
+        repo.delete(factoid);
 
         return !repo.existsById(id);
     }
