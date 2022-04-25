@@ -37,4 +37,8 @@ public class FactoidService {
 
         return !repo.existsById(id);
     }
+
+    public Factoid getRandom() {
+        return repo.getRandom();
+    }
 }
