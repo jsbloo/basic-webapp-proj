@@ -34,6 +34,11 @@ public class FactoidController {
         return new ResponseEntity<>(service.getAll(),HttpStatus.OK);
     }
 
+    @GetMapping("/getRandom")
+    public ResponseEntity<Factoid> getRandom(){
+        return new ResponseEntity<>(service.getRandom(), HttpStatus.OK);
+    }
+
     @PutMapping("/update/{id}")
     public ResponseEntity<Factoid> update(@PathVariable long id, @RequestBody Factoid factoid){
         return new ResponseEntity<>(service.update(id,factoid), HttpStatus.OK);
