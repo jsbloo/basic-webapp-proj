@@ -23,20 +23,25 @@ const showOutput = (factoid) => {
 };
 
 const isTrue = () => {
+    console.log(factoid)
     if(currentFactoid.axiom){
         document.getElementById('factoid').innerHTML = "Correct!"
+        document.getElementById('explanation').innerHTML = factoid.data.explanation;
         return
     }
     document.getElementById('factoid').innerHTML = "Wrong ):"
+    document.getElementById('explanation').innerHTML = factoid.data.explanation;
     return
 }
 
 const isFalse = () => {
     if(!currentFactoid.axiom){
         document.getElementById('factoid').innerHTML = "Correct!"
+        document.getElementById('explanation').innerHTML = factoid.data.explanation;
         return
     }
     document.getElementById('factoid').innerHTML = "Wrong ):"
+    document.getElementById('explanation').innerHTML = factoid.data.explanation;
     return
 }
 

@@ -17,21 +17,25 @@ public class Factoid {
     @Column(name = "axiom", nullable = false)
     private boolean axiom;
 
+    @Column(name = "explanation",nullable = false)
+    private String explanation;
+
     //TODO:img and tooltip, user parent id
 
-
-    public Factoid(String content, boolean axiom) {
-        this.content = content;
-        this.axiom = axiom;
+    public Factoid() {
     }
 
-    public Factoid(Long id, String content, boolean axiom) {
+    public Factoid(String content, boolean axiom, String explanation) {
+        this.content = content;
+        this.axiom = axiom;
+        this.explanation = explanation;
+    }
+
+    public Factoid(Long id, String content, boolean axiom, String explanation) {
         this.id = id;
         this.content = content;
         this.axiom = axiom;
-    }
-
-    public Factoid() {
+        this.explanation = explanation;
     }
 
     public Long getId() {
@@ -56,6 +60,14 @@ public class Factoid {
 
     public void setAxiom(boolean axiom) {
         this.axiom = axiom;
+    }
+
+    public String getExplanation() {
+        return explanation;
+    }
+
+    public void setExplanation(String explanation) {
+        this.explanation = explanation;
     }
 
     @Override
