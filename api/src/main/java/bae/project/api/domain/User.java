@@ -16,6 +16,8 @@ public class User {
     @Column
     private double accuracy;
 
+    //TODO: factoid FK, factoid list, password
+
     public User(String userName, double accuracy) {
         this.userName = userName;
         this.accuracy = accuracy;
