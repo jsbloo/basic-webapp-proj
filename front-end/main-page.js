@@ -23,26 +23,30 @@ const showOutput = (factoid) => {
 };
 
 const isTrue = () => {
-    console.log(factoid)
+    console.log(currentFactoid);
     if(currentFactoid.axiom){
         document.getElementById('factoid').innerHTML = "Correct!"
-        document.getElementById('explanation').innerHTML = factoid.data.explanation;
+        document.getElementById('explanation').innerHTML = currentFactoid.explanation;
         return
     }
     document.getElementById('factoid').innerHTML = "Wrong ):"
-    document.getElementById('explanation').innerHTML = factoid.data.explanation;
+    document.getElementById('explanation').innerHTML = currentFactoid.explanation;
     return
 }
 
 const isFalse = () => {
     if(!currentFactoid.axiom){
         document.getElementById('factoid').innerHTML = "Correct!"
-        document.getElementById('explanation').innerHTML = factoid.data.explanation;
+        document.getElementById('explanation').innerHTML = currentFactoid.explanation;
         return
     }
     document.getElementById('factoid').innerHTML = "Wrong ):"
-    document.getElementById('explanation').innerHTML = factoid.data.explanation;
+    document.getElementById('explanation').innerHTML = currentFactoid.explanation;
     return
+}
+
+const clearExplanation = () =>{
+    document.getElementById('explanation').innerHTML = "";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -51,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.getElementById('tButton').addEventListener('click', isTrue);
 document.getElementById('fButton').addEventListener('click', isFalse);
-document.getElementById('nextButton').addEventListener('click', getRandomFactoid);
+document.getElementById('nextButton').addEventListener('click', () => 
+{getRandomFactoid() , clearExplanation()});
 
   
