@@ -2,9 +2,16 @@ const apiPath = "http://localhost:8080/"
 
 let currentFactoid = [];
 
-//GET REQUEST
+//GET REQUESTS
 const getFactoidById = () =>{
     axios.get(apiPath + "factoid/getById/5" ,{
+    })
+    .then(factoid => showOutput(factoid))
+    .catch(err => console.error(err));
+};
+
+const getRandomFactoid = () =>{
+    axios.get(apiPath + "factoid/getRandom" ,{
     })
     .then(factoid => showOutput(factoid))
     .catch(err => console.error(err));
@@ -34,11 +41,11 @@ const isFalse = () => {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    getFactoidById();
+    getRandomFactoid();
   });
 
 document.getElementById('tButton').addEventListener('click', isTrue);
 document.getElementById('fButton').addEventListener('click', isFalse);
-document.getElementById('nextButton').addEventListener('click', getFactoidById);
+document.getElementById('nextButton').addEventListener('click', getRandomFactoid);
 
   
