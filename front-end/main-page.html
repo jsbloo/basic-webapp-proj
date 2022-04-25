@@ -15,14 +15,16 @@
         <p class="factoidClass" id="factoid"></p>
         <div class="row">
             <div class="col-sm">
-                <a href="#factoid2" class="btn btn-success" id="tButton" role="button">True</a> 
+                <a class="btn btn-success" id="tButton" data-toggle="collapse" href="#explanation" role="button">True</a> 
             </div>
             <div class="col-sm">
                 <button type="button" class="btn btn-danger" id="fButton">False</button>
             </div>
+            <div class="card card-body" id="explanation"></div>
             <div class="col-sm">
                 <button type="button" class="btn btn-info" id="nextButton">Next</button>
             </div>
+            <div class="collapse" id="explanation">
         </div>
       </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
