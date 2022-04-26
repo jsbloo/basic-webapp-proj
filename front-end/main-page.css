@@ -14,5 +14,5 @@ html, body {
 
 .factoidClass{
     font-family: arial;
-    font-size: 40px;
+    font-size: min(4vw,40px);
 }
