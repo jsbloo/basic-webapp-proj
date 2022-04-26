@@ -42,6 +42,17 @@ const deleteFactoid = () => {
         .catch(err => console.error(err));
 };
 
+//GET REQUESTS
+const getFactoidByIdProm = (id) => {
+    return axios.get(apiPath + "factoid/getById/" + id, {})
+    .then(factoid => factoid.data).catch(err => console.error(err));
+};
+
+const getAllFactoid = () => {
+    return axios.get(apiPath + "factoid/getAll", {})
+    .then(factoid => factoid.data).catch(err => console.log(err));
+};
+
 
 const appendFactoid = async () => {
     let id = document.getElementById("factoidId").value
@@ -60,15 +71,32 @@ const appendFactoid = async () => {
     // (factoid => showOutput(factoid));
 }
 
-//GET REQUESTS
-const getFactoidByIdProm = (id) => {
-    return axios.get(apiPath + "factoid/getById/" + id, {})
-    .then(factoid => factoid.data).catch(err => console.error(err));
-};
+const appendFactoids = async (factoid) => {
+    let div = document.createElement('div');
+    div.setAttribute('class', 'factoid block bc2')
+    div.innerHTML = `<div class="card">
+                        <div class="card-header">${factoid.id}</div>
+                        <div class="card-body">
+                            <h5 class="card-title">${factoid.content}</h5>
+                            <p class="card-text">${factoid.explanation}</p>
+                            <p class="card-text">${factoid.axiom}</p>
+                        </div>
+                    </div>`
+    document.getElementById('factoids').appendChild(div);
+}
 
-const showOutput = (factoid) => {
-    document.getElementById('factoid').innerHTML = factoid.data.content;
-};
+const showAll = async () => {
+    const factoidList = await getAllFactoid();
+
+    factoidList.forEach(element => {
+        appendFactoids(element);
+    });
+}
+
+// const showOutput = (factoid) => {
+//     console.log(factoid)
+//     document.getElementById('factoid').innerHTML = factoid.data.content;
+// };
 
 //TODO:close button resets form, lookup security risk of form input
 const explElement = document.getElementById("createFactoidExplanation");
@@ -76,4 +104,5 @@ const explElement = document.getElementById("createFactoidExplanation");
 document.getElementById("createFactoid").addEventListener("click", createFactoid);
 document.getElementById("updateFactoid").addEventListener("click", updateFactoid);
 document.getElementById("deleteFactoid").addEventListener("click", deleteFactoid);
+document.getElementById("getAllBtn").addEventListener("click", showAll);
 document.getElementById("submitBtn").addEventListener("click", appendFactoid);
