@@ -93,6 +93,10 @@ const showAll = async () => {
     });
 }
 
+const clearFactoids = () => {
+    document.getElementById('factoids').innerHTML = "";
+}
+
 // const showOutput = (factoid) => {
 //     console.log(factoid)
 //     document.getElementById('factoid').innerHTML = factoid.data.content;
@@ -105,4 +109,5 @@ document.getElementById("createFactoid").addEventListener("click", createFactoid
 document.getElementById("updateFactoid").addEventListener("click", updateFactoid);
 document.getElementById("deleteFactoid").addEventListener("click", deleteFactoid);
 document.getElementById("getAllBtn").addEventListener("click", showAll);
+document.getElementById("clearBtn").addEventListener("click", clearFactoids);
 document.getElementById("submitBtn").addEventListener("click", appendFactoid);
