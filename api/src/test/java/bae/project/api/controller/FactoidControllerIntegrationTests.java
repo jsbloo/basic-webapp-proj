@@ -3,6 +3,7 @@ package bae.project.api.controller;
 import bae.project.api.domain.Factoid;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,6 +11,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.web.servlet.MockMvc;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -54,6 +58,31 @@ public class FactoidControllerIntegrationTests {
 
         mvc.perform(get("/factoid/getById/1")
                         .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content().json(entryAsJSON));
+    }
+
+    @Test
+    public void getAllTest() throws Exception{
+        List<Factoid> output = new ArrayList<>();
+        output.add(new Factoid(1L,"test false content",false, "test false explanation"));
+
+        String outputAsJSON = this.mapper.writeValueAsString(output);
+
+        mvc.perform(get("/factoid/getAll")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content().json(outputAsJSON));
+    }
+
+    @Test
+    public void getRandomTest() throws Exception{
+        Factoid entry = new Factoid(1L,"test false content",false, "test false explanation");
+        String entryAsJSON = this.mapper.writeValueAsString(entry);
+
+        mvc.perform(get("/factoid/getRandom")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(entryAsJSON))
                 .andExpect(status().isOk())
                 .andExpect(content().json(entryAsJSON));
     }

@@ -11,6 +11,9 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -103,6 +106,21 @@ public class FactoidControllerUnitTests {
                         .content(entryAsJSON))
                 .andExpect(status().isOk())
                 .andExpect(content().json(entryAsJSON));
+    }
+
+    @Test
+    public void getAllTest() throws Exception{
+        List<Factoid> output = new ArrayList<>();
+        output.add(new Factoid("test content",true, "test explanation"));
+
+        String outputAsJSON = this.mapper.writeValueAsString(output);
+
+        Mockito.when(this.service.getAll()).thenReturn(output);
+
+        mvc.perform(get("/factoid/getAll")
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content().json(outputAsJSON));
     }
 
 }
