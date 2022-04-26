@@ -64,6 +64,37 @@
         </div>
     </div>
 
+    <form>
+        <div class="form-row align-items-center">
+            <div class="col-auto">
+                <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Find Factoid by ID</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">ID</div>
+                        </div>
+                        <input type="text" class="form-control" id="factoidId" placeholder="ID">
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-primary mb-2" id="submitBtn">Submit</button>
+            </div>
+        </div>  
+    </form>
+    <div id="factoids"></div>
+
+    <!-- <div class="card">
+        <div class="card-header">
+          1
+        </div>
+        <div class="card-body">
+            <p>Uraguay won the first ever world cup!</p>
+            <p>true</p>
+            <p>Uraguay won the 1930, world cup beating Argentina in the final</p>
+        </div>
+      </div> -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <script src="factoid-page.js"></script>
     <script>
