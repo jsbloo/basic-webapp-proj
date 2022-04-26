@@ -1,5 +1,8 @@
 const apiPath = "http://localhost:8080/"
 
+//TODO: put all rest functions in their own file
+//TODO: added error message when finding ID that doesnt exist
+
 // POST REQUESTS  
 const createFactoid = () => {
     axios.post(apiPath + "factoid/create/", {
@@ -13,12 +16,37 @@ const createFactoid = () => {
         .catch(err => console.error(err));
 };
 
+// PUT REQUESTS  
+const updateFactoid = () => {
+    let id = document.getElementById("factoidUpdateId").value; 
+    console.log(id);
+    axios.put(apiPath + "factoid/update/"+id, {
+            "content": document.getElementById("updateFactoidContent").value,
+            "axiom": $("#updateAxiomSelect option:selected").text() === 'True',
+            "explanation": document.getElementById("updateFactoidExplanation").value
+        })
+        .then(message => document.getElementById("updateFactoidMessage").innerHTML = (() => {
+            return (message.status == "200" ? "Success!" : "Failure: " + message.status);
+        })())
+        .catch(err => console.error(err));
+};
+
+// DELETE REQUESTS  
+const deleteFactoid = () => {
+    let id = document.getElementById("factoidDeleteId").value; 
+    console.log(id);
+    axios.delete(apiPath + "factoid/delete/"+id)
+        .then(message => document.getElementById("deleteFactoidMessage").innerHTML = (() => {
+            return (message.status == "204" ? "Success!" : "Failure: " + message.status);
+        })())
+        .catch(err => console.error(err));
+};
+
 
 const appendFactoid = async () => {
     let id = document.getElementById("factoidId").value
     let factoid = await getFactoidByIdProm(id);
     let div = document.createElement('div');
-    console.log(factoid);
     div.setAttribute('class', 'factoid block bc2')
     div.innerHTML = `<div class="card">
                         <div class="card-header">${id}</div>
@@ -46,4 +74,6 @@ const showOutput = (factoid) => {
 const explElement = document.getElementById("createFactoidExplanation");
 
 document.getElementById("createFactoid").addEventListener("click", createFactoid);
+document.getElementById("updateFactoid").addEventListener("click", updateFactoid);
+document.getElementById("deleteFactoid").addEventListener("click", deleteFactoid);
 document.getElementById("submitBtn").addEventListener("click", appendFactoid);
