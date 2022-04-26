@@ -19,16 +19,16 @@
 <body>
     <div id="navigation"></div>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">
         Create new Factoid
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Create Factoid</h5>
+                    <h5 class="modal-title" id="createModalLabel">Create Factoid</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -64,6 +64,94 @@
         </div>
     </div>
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+        Update Factoid
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="updateModalLabel">Update Factoid</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label" id="updateId">ID</label>
+                            <input type="text" id="factoidUpdateId" class="form-control"
+                                placeholder="Enter ID of the factoid you want to update">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Content</label>
+                            <input type="text" id="updateFactoidContent" class="form-control"
+                                placeholder="Enter a fact or fiction!">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Explanation</label>
+                            <input type="text" id="updateFactoidExplanation" class="form-control"
+                                placeholder="Enter an explanation to your question">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">True/False</label>
+                            <select id="updateAxiomSelect" class="form-select">
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+                        </div>
+                        <div class="mb-3" id="updateFactoidMessage" style="text-align: center;">
+                            <p></p>
+                        </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="updateFactoid">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button trigger modal -->
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+        Delete Factoid
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Delete Factoid</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label" id="deleteId">ID</label>
+                            <input type="text" id="factoidDeleteId" class="form-control"
+                                placeholder="Enter ID of the factoid you want to delete">
+                        </div>
+                        <div class="mb-3" id="deleteFactoidMessage" style="text-align: center;">
+                            <p></p>
+                        </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="deleteFactoid">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <form>
         <div class="form-row align-items-center">
             <div class="col-auto">
@@ -80,7 +168,7 @@
             <div class="col-auto">
                 <button type="button" class="btn btn-primary mb-2" id="submitBtn">Submit</button>
             </div>
-        </div>  
+        </div>
     </form>
     <div id="factoids"></div>
 
