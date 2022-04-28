@@ -1,6 +1,11 @@
 package bae.project.api.domain;
 
+import org.springframework.security.crypto.password.PasswordEncoder;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -10,26 +15,32 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(nullable = false, unique = true)
-    private String userName;
+    @Column(nullable = false)
+    private String username;
 
-    @Column
-    private double accuracy;
+    @Column(nullable = false)
+    private String password;
 
-    //TODO: factoid FK, factoid list, password, correct in a row
+    private int active;
 
-    public User(String userName, double accuracy) {
-        this.userName = userName;
-        this.accuracy = accuracy;
-    }
-
-    public User(long id, String userName, double accuracy) {
-        this.id = id;
-        this.userName = userName;
-        this.accuracy = accuracy;
-    }
+    private String roles;
 
     public User() {
+    }
+
+    public User(String username, String password, int active, String roles) {
+        this.username = username;
+        this.password = password;
+        this.active = active;
+        this.roles = roles;
+    }
+
+    public User(long id, String username, String password, int active, String roles) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.active = active;
+        this.roles = roles;
     }
 
     public long getId() {
@@ -40,20 +51,43 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public double getAccuracy() {
-        return accuracy;
+    public String getPassword() {
+        return password;
     }
 
-    public void setAccuracy(double accuracy) {
-        this.accuracy = accuracy;
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getActive() {
+        return active;
+    }
+
+    public void setActive(int active) {
+        this.active = active;
+    }
+
+    public String getRoles() {
+        return roles;
+    }
+
+    public void setRoles(String roles) {
+        this.roles = roles;
+    }
+
+    public List<String> getRoleList(){
+        if(this.roles.length() > 0){
+            return Arrays.asList(this.roles.split(","));
+        }
+        return new ArrayList<>();
     }
 
     @Override
@@ -61,20 +95,22 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return id == user.id && Double.compare(user.accuracy, accuracy) == 0 && Objects.equals(userName, user.userName);
+        return id == user.id && active == user.active && Objects.equals(username, user.username) && Objects.equals(password, user.password) && Objects.equals(roles, user.roles);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userName, accuracy);
+        return Objects.hash(id, username, password, active, roles);
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", accuracy=" + accuracy +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", active=" + active +
+                ", roles='" + roles + '\'' +
                 '}';
     }
 }
