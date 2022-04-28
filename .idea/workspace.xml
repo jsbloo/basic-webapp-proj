@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c766a3da-2b10-4e28-b63e-15db213e35b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/repo/UserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/resources/static/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/resources/static/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_6_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_6_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/static/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/static/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/FactoidControllerIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/FactoidControllerIntegrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/FactoidControllerUnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/FactoidControllerUnitTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,9 +148,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ApiApplication" />
+        <item itemvalue="JUnit.bae.project.api in api" />
         <item itemvalue="JUnit.FactoidControllerIntegrationTests.deleteTest" />
         <item itemvalue="JUnit.FactoidControllerIntegrationTests" />
-        <item itemvalue="JUnit.bae.project.api in api" />
         <item itemvalue="JUnit.FactoidServiceTests" />
       </list>
     </recent_temporary>
@@ -164,6 +167,15 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
