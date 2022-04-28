@@ -19,18 +19,18 @@ public class DbInit implements CommandLineRunner {
         this.passwordEncoder = passwordEncoder;
     }
 
+    //uncomment code when need to add first user, or another admin
     @Override
     public void run(String... args) {
-        // Delete all
+/*        // Delete all
         this.userRepo.deleteAll();
 
         // Crete users
         User admin = new User("admin",passwordEncoder.encode("admin123"),1,"ADMIN");
-        User dan = new User("dan",passwordEncoder.encode("dan123"),1,"USER");
 
-        List<User> users = Arrays.asList(dan);
+        List<User> users = List.of(admin);
 
         // Save to db
-        this.userRepo.saveAll(users);
+        this.userRepo.saveAll(users);*/
     }
 }
