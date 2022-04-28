@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c766a3da-2b10-4e28-b63e-15db213e35b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_6_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_6_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/security/DbInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/security/DbInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/resources/static/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/static/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/FactoidControllerIntegrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/FactoidControllerIntegrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/FactoidControllerUnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/FactoidControllerUnitTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
