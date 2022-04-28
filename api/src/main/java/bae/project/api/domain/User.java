@@ -1,5 +1,6 @@
 package bae.project.api.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.persistence.*;
@@ -13,6 +14,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     private long id;
 
     @Column(nullable = false, unique = true)
@@ -83,6 +85,7 @@ public class User {
         this.roles = roles;
     }
 
+    @JsonIgnore
     public List<String> getRoleList(){
         if(this.roles.length() > 0){
             return Arrays.asList(this.roles.split(","));
