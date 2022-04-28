@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c766a3da-2b10-4e28-b63e-15db213e35b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/UserControllerIntegrationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/UserControllerUnitTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/bae/project/api/service/UserServiceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/security/DbInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/security/DbInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/static/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/static/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/testdata.sql" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/testdata.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/testschema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/testschema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,21 +64,8 @@
       <recent name="G:\git-repos\bae-api-proj\api\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ApiApplication">
-    <configuration name="ApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bae.project.api.ApiApplication" />
-      <module name="api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bae.project.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FactoidControllerIntegrationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.bae.project.api in api">
+    <configuration name="UserControllerIntegrationTests.getByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
@@ -83,29 +74,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="bae.project.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="bae.project.api.controller.FactoidControllerIntegrationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FactoidControllerIntegrationTests.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bae.project.api.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bae.project.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="bae.project.api.controller.FactoidControllerIntegrationTests" />
-      <option name="METHOD_NAME" value="deleteTest" />
+      <option name="MAIN_CLASS_NAME" value="bae.project.api.controller.UserControllerIntegrationTests" />
+      <option name="METHOD_NAME" value="getByUsername" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FactoidServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTests.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
@@ -114,8 +90,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="bae.project.api.service" />
-      <option name="MAIN_CLASS_NAME" value="bae.project.api.service.FactoidServiceTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="bae.project.api.service.UserServiceTests" />
+      <option name="METHOD_NAME" value="createTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTests.getByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bae.project.api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bae.project.api.service" />
+      <option name="MAIN_CLASS_NAME" value="bae.project.api.service.UserServiceTests" />
+      <option name="METHOD_NAME" value="getByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTests.getByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bae.project.api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bae.project.api.service" />
+      <option name="MAIN_CLASS_NAME" value="bae.project.api.service.UserServiceTests" />
+      <option name="METHOD_NAME" value="getByUsername" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ApiApplication" />
         <item itemvalue="JUnit.bae.project.api in api" />
-        <item itemvalue="JUnit.FactoidControllerIntegrationTests.deleteTest" />
-        <item itemvalue="JUnit.FactoidControllerIntegrationTests" />
-        <item itemvalue="JUnit.FactoidServiceTests" />
+        <item itemvalue="JUnit.UserServiceTests.getByUsername" />
+        <item itemvalue="JUnit.UserServiceTests.getByIdTest" />
+        <item itemvalue="JUnit.UserServiceTests.createTest" />
+        <item itemvalue="JUnit.UserControllerIntegrationTests.getByUsername" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +177,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/bae_api_proj$bae_project_api_in_api.ic" NAME="bae.project.api in api Coverage Results" MODIFIED="1650982104606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/bae_api_proj$bae_project_api_in_api.ic" NAME="bae.project.api in api Coverage Results" MODIFIED="1651189800766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>bae.project.api.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/bae_api_proj$bae_project_api_controller_in_api.ic" NAME="bae.project.api.controller in api Coverage Results" MODIFIED="1650979912355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
