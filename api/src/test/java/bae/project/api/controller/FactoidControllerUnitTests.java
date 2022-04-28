@@ -1,14 +1,18 @@
 package bae.project.api.controller;
 
 import bae.project.api.domain.Factoid;
+import bae.project.api.security.UserPrincipalDetailsService;
 import bae.project.api.service.FactoidService;
+import bae.project.api.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.ArrayList;
@@ -32,6 +36,12 @@ public class FactoidControllerUnitTests {
 
     @MockBean
     private FactoidService service;
+
+    @MockBean
+    private UserService userService;
+
+    @MockBean
+    private UserPrincipalDetailsService userPrincipalDetailsService;
 
     @Test
     public void createTest() throws Exception{
