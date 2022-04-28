@@ -28,4 +28,10 @@ public class UserController {
     public ResponseEntity<User> getById(@PathVariable long id){
         return new ResponseEntity<>(service.getById(id),HttpStatus.OK);
     }
+
+    @GetMapping(value="/{username}")
+    public User findByUsername(@PathVariable String username) {
+        System.out.println("Username :" + username);
+        return service.findByUsername(username);
+    }
 }

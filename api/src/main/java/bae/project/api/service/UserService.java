@@ -25,4 +25,9 @@ public class UserService {
         return repo.saveAndFlush(user);}
 
     public User getById(long id){return repo.findById(id).orElseThrow(EntityNotFoundException::new);}
+
+    public User findByUsername(String username){
+        return repo.findByUsername(username);
+    }
+
 }

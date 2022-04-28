@@ -31,8 +31,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests().antMatchers("/factoid-page.html").authenticated()
-                .anyRequest().permitAll().and().csrf().disable();
-        http.httpBasic();
+                .anyRequest().permitAll().and().csrf().disable()
+                .formLogin(form -> form.loginPage("/login").permitAll());
     }
 
     @Bean
