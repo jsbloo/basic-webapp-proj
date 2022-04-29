@@ -31,7 +31,7 @@ See installation instructions below
   
   ## What is this? 
   
-  This is a fun little game, called 'True or False'. The user must read a factoid and determine if ir is true or false.
+  This is a fun little game, called 'True or False'. The user must read a factoid and determine if it is true or false.
   The user can create an account, and then use 'FactoidStudio' to create/read/update/delete their own factoids. These are then added to the random selection.
   
   ## How to play
