@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c766a3da-2b10-4e28-b63e-15db213e35b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/documentation/jiraBurn.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
     </list>
@@ -70,7 +69,7 @@
       <recent name="G:\git-repos\bae-api-proj\api\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in api">
+  <component name="RunManager" selected="JUnit.bae.project.api in api">
     <configuration name="ApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bae.project.api.ApiApplication" />
       <module name="api" />
@@ -136,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in api" />
         <item itemvalue="JUnit.bae.project.api in api" />
+        <item itemvalue="JUnit.All in api" />
         <item itemvalue="JUnit.bae.project in api" />
         <item itemvalue="Application.ApiApplication" />
         <item itemvalue="JUnit.bae in api" />
@@ -168,7 +167,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/bae_api_proj$bae_project_api_in_api.ic" NAME="bae.project.api in api Coverage Results" MODIFIED="1651189800766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/bae_api_proj$All_in_api.ic" NAME="All in api Coverage Results" MODIFIED="1651223292163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/bae_api_proj$bae_project_api_in_api.ic" NAME="bae.project.api in api Coverage Results" MODIFIED="1651223327586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>bae.project.api.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/bae_api_proj$bae_project_api_controller_in_api.ic" NAME="bae.project.api.controller in api Coverage Results" MODIFIED="1650979912355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
