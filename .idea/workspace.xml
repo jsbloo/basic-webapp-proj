@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c766a3da-2b10-4e28-b63e-15db213e35b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/UserControllerIntegrationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/test/java/bae/project/api/controller/UserControllerUnitTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/test/java/bae/project/api/service/UserServiceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_6_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_6_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/bae/project/api/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/bae/project/api/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/testdata.sql" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/testdata.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/testschema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/testschema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,35 +63,16 @@
       <recent name="G:\git-repos\bae-api-proj\api\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.bae.project.api in api">
-    <configuration name="UserControllerIntegrationTests.getByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.bae.project in api">
+    <configuration name="ApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bae.project.api.ApiApplication" />
       <module name="api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bae.project.api.controller.*" />
+          <option name="PATTERN" value="bae.project.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="bae.project.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="bae.project.api.controller.UserControllerIntegrationTests" />
-      <option name="METHOD_NAME" value="getByUsername" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTests.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bae.project.api.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bae.project.api.service" />
-      <option name="MAIN_CLASS_NAME" value="bae.project.api.service.UserServiceTests" />
-      <option name="METHOD_NAME" value="createTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,6 +109,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="bae.project in api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bae.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bae.project" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="bae.project.api in api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
@@ -145,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.bae.project in api" />
+        <item itemvalue="Application.ApiApplication" />
         <item itemvalue="JUnit.bae.project.api in api" />
         <item itemvalue="JUnit.UserServiceTests.getByUsername" />
         <item itemvalue="JUnit.UserServiceTests.getByIdTest" />
-        <item itemvalue="JUnit.UserServiceTests.createTest" />
-        <item itemvalue="JUnit.UserControllerIntegrationTests.getByUsername" />
       </list>
     </recent_temporary>
   </component>
