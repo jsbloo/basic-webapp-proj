@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c766a3da-2b10-4e28-b63e-15db213e35b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jiraBurn.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
     </list>
@@ -29,6 +25,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
@@ -44,6 +48,9 @@
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="28D7vVxo4w5fQz0pEGXIR9O99Tx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -63,7 +70,7 @@
       <recent name="G:\git-repos\bae-api-proj\api\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.bae.project in api">
+  <component name="RunManager" selected="JUnit.All in api">
     <configuration name="ApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bae.project.api.ApiApplication" />
       <module name="api" />
@@ -77,34 +84,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTests.getByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bae.project.api.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bae.project.api.service" />
-      <option name="MAIN_CLASS_NAME" value="bae.project.api.service.UserServiceTests" />
-      <option name="METHOD_NAME" value="getByIdTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTests.getByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="bae in api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bae.project.api.service.*" />
+          <option name="PATTERN" value="bae.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="bae.project.api.service" />
-      <option name="MAIN_CLASS_NAME" value="bae.project.api.service.UserServiceTests" />
-      <option name="METHOD_NAME" value="getByUsername" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="bae" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in api" />
+        <item itemvalue="JUnit.bae.project.api in api" />
         <item itemvalue="JUnit.bae.project in api" />
         <item itemvalue="Application.ApiApplication" />
-        <item itemvalue="JUnit.bae.project.api in api" />
-        <item itemvalue="JUnit.UserServiceTests.getByUsername" />
-        <item itemvalue="JUnit.UserServiceTests.getByIdTest" />
+        <item itemvalue="JUnit.bae in api" />
       </list>
     </recent_temporary>
   </component>
