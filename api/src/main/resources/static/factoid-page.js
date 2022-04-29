@@ -1,4 +1,4 @@
-const apiPath = "http://localhost:8080/"
+const apiPath = "/"
 
 //TODO: put all rest functions in their own file
 //TODO: added error message when finding ID that doesnt exist

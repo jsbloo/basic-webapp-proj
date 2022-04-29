@@ -7,3 +7,14 @@ CREATE TABLE factoid(
     explanation VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
 );
+
+DROP TABLE IF EXISTS user CASCADE;
+
+CREATE TABLE user(
+    id INT AUTO_INCREMENT,
+    active smallint(1),
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password  VARCHAR(255) NOT NULL,
+    roles VARCHAR(255),
+    PRIMARY KEY (id)
+);
