@@ -2,10 +2,10 @@
 
 ## Hello reader, welcome to my web-app project.
 
-See instalation instructoins below 
+See installation instructions below 
 
 <details>
-  <summary>Instalation Instructions</summary>
+  <summary>Installation Instructions</summary>
   
   ### 1. Pull the repo onto your system
   ### 2. Navigate to ``` \bae-api-proj\api ```
